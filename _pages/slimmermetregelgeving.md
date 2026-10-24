@@ -1,7 +1,6 @@
 ---
-layout: page
-title: About
-permalink: /about/
+title: Over ons
+permalink: /slimmermetregelgeving/
 ---
 
 Slimmer met regelgeving is een burgerinitiatief en is in 2017 opgericht. Ons samenwerkingsverband is ontstaan vanuit het gedachtengoed en het netwerk van Harrie van Houtum. Zijn ideeën, inzet, passie en doorzettingsvermogen hebben ons bij elkaar gebracht.

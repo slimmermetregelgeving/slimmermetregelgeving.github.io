@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "DNA van de wet- en regelgeving"
 date:   2017-02-17 14:34:41 +0200
 categories: jekyll
