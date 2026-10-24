@@ -18,6 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+locale: "nl-NL"
+date_format: "%-d %B %Y"
 title: Slimmer met regelgeving
 #email: your-email@example.com
 description: Een burgerinitiatief om kennis en kunde van regels, rechtstaat en technologie aan elkaar te verbinden. Om wet- en regelgeving beter toegankelijk, begrijpelijk en toepasbaar te maken.
@@ -43,7 +45,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true

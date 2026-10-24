@@ -1,0 +1,23 @@
+{% assign months = "januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december" | split: "|" %}
+{% assign m = page.date | date: "%-m" | minus: 1 %}
+{% assign day = page.date | date: "%-d" %}
+{% assign month = months[m] %}
+{% assign year = page.date | date: "%Y" %}
+
+{% if page.last_modified_at %}
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[locale].date_label | default: "" }}</strong> <time class="dt-updated" datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ day }} {{ month }} {{ year }}</time>
+    {% if page.author %}
+      <span class="page__meta-author">
+        <i class="fas fa-user" aria-hidden="true"></i> {{ page.author }}
+      </span>
+    {% endif %}
+  </p>
+{% elsif page.date %}
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[locale].date_label | default: "" }}</strong> <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ day }} {{ month }} {{ year }}</time>
+    {% if page.author %}
+      <span class="page__meta-author">
+        <i class="fas fa-user" aria-hidden="true"></i> {{ page.author }}
+      </span>
+    {% endif %}
+  </p>
+{% endif %}
