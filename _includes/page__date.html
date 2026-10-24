@@ -8,7 +8,7 @@
   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[locale].date_label | default: "" }}</strong> <time class="dt-updated" datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ day }} {{ month }} {{ year }}</time>
     {% if page.author %}
       <span class="page__meta-author">
-        <i class="fas fa-user" aria-hidden="true"></i> {{ page.author }}
+        <i class="fas fa-user" aria-hidden="true"></i> {{ site.data.authors[page.author].name | default: page.author }}
       </span>
     {% endif %}
   </p>
@@ -16,7 +16,7 @@
   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[locale].date_label | default: "" }}</strong> <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ day }} {{ month }} {{ year }}</time>
     {% if page.author %}
       <span class="page__meta-author">
-        <i class="fas fa-user" aria-hidden="true"></i> {{ page.author }}
+        <i class="fas fa-user" aria-hidden="true"></i> {{ site.data.authors[page.author].name | page.author }}
       </span>
     {% endif %}
   </p>
