@@ -1,0 +1,34 @@
+---
+# Dit zorgt ervoor dat Jekyll het bestand verwerkt (laat de streepjes staan!)
+---
+
+$sans-serif: "Cabin", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$background-color: #f0f4f8;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* --- Custom Logo Aanpassingen --- */
+a.site-title {
+  display: none;
+}
+
+.site-logo img {
+  max-height: 70px;
+  width: auto;
+}
+
+.masthead__inner-wrap {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.masthead,
+.greedy-nav {
+  background-color: #ffffff !important; // Vervang door jouw gewenste menubalk-kleur
+  border-bottom: 1px solid #e5e5e5;     // Optioneel: een subtiel scheidingslijntje eronder
+}
+
+.tada {
+  text-align: center;
+}
