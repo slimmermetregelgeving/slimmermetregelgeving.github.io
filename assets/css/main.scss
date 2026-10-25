@@ -32,3 +32,22 @@ a.site-title {
 .tada {
   text-align: center;
 }
+@media (min-width: 48em) {
+  .tada {
+    margin-top: 1em;
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+}
+
+@media (min-width: 80em) {
+  html {
+    .page__content {
+     p,
+     li,
+     dl {
+       font-size: 0.9em;
+     }
+    }
+  }
+}
