@@ -1,0 +1,9 @@
+---
+layout: single
+---
+
+{% if page.header.teaser %}
+  <img src="{{ page.header.teaser | relative_url }}"/>
+{% endif %}
+
+{{ content }}
