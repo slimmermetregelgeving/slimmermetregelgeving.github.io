@@ -42,12 +42,17 @@ plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
 
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+
 defaults:
   # _posts
   - scope:
       path: ""
       type: posts
     values:
+      permalink: /:year/:month/:day/:title
       layout: post
       author_profile: false
       read_time: true

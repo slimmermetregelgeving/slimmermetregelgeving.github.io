@@ -2,7 +2,10 @@
 title:  "Wetten en algoritmen ingewikkeld? Welnee!"
 date:   2026-04-17
 author: Slimmer
-categories: klaretaal, signalering
+layout: post
+categories:
+  - klare taal
+  - signalering
 header:
   teaser: /assets/images/2026-04-17-huh.png
 ---
